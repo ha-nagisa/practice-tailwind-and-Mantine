@@ -13,6 +13,13 @@ module.exports = {
       ja: [...defaultTheme.fontFamily.sans],
       en: [...defaultTheme.fontFamily.sans],
     },
+    spacing: {
+      ['20px']: '20px',
+      container: 'calc(100% - 32px)',
+    },
+    maxWidth: {
+      container: '992px',
+    },
     extend: {
       colors: {
         theme: {
@@ -22,7 +29,10 @@ module.exports = {
           dark: '#111111',
         },
         primary: {
-          DEFAULT: '#242424',
+          white: '#ffffff',
+          pink: '#E64980',
+          dark: '#25262B',
+          gray: '#E9ECEF',
         },
       },
     },
