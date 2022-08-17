@@ -16,8 +16,10 @@ module.exports = {
     spacing: {
       0: '0px',
       '2px': '2px',
+      '4px': '4px',
       '5px': '5px',
       '7px': '7px',
+      '8px': '8px',
       '12px': '12px',
       '13px': '13px',
       '14px': '14px',
@@ -30,7 +32,12 @@ module.exports = {
       '21px': '21px',
       '24px': '24px',
       '28px': '28px',
+      '30px': '30px',
       '42.5px': '42.5px',
+      '42.5px': '42.5px',
+      '53.5px': '53.5px',
+      '63.5px': '63.5px',
+      '85.5px': '85.5px',
       container: 'calc(100% - 32px)',
     },
     maxWidth: {

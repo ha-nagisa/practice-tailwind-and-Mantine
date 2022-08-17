@@ -1,10 +1,12 @@
 import IconDarkMode from '@/assets/icon/icon_darkMode.svg';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import HumbuggerMenu from '../humbugger';
+import HumbuggerMenu from './humbugger';
 
 export const Header = () => {
   const [isModalOpen, SetIsModalOpen] = useState(false);
+
+  /** TODO: モーダル 開いた時に背景固定 */
 
   return (
     <>
