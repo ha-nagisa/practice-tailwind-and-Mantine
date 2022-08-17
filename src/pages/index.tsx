@@ -69,6 +69,13 @@ const TopPage: NextPage = () => {
             </BlockWithTitle>
           </Container>
         </TopSection>
+        <TopSection>
+          <Container>
+            <BlockWithTitle title="portfolio">
+              <div></div>
+            </BlockWithTitle>
+          </Container>
+        </TopSection>
       </main>
     </div>
   );

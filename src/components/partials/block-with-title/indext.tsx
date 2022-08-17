@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Title } from 'src/components/title';
+import { Title } from 'src/components/partials/title';
 
 type Props = {
   title: string;
