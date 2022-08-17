@@ -18,7 +18,11 @@ export const Header = () => {
             handleModal={() => SetIsModalOpen(!isModalOpen)}
           />
         </div>
-        <p className="block text-lg font-bold text-primary-dark leading-6">Shimabu IT University</p>
+        <Link href={PAGE_URL.TOP}>
+          <a className="block text-lg font-bold text-primary-dark leading-6">
+            Shimabu IT University
+          </a>
+        </Link>
         <div className="flex items-center">
           <ul className="hidden md:flex md:items-center">
             <li className="mr-16px">

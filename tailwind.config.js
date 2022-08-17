@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+let plugin = require('tailwindcss/plugin');
 
 module.exports = {
   mode: 'jit',
@@ -35,6 +36,7 @@ module.exports = {
       '24px': '24px',
       '28px': '28px',
       '30px': '30px',
+      '40px': '40px',
       '42.5px': '42.5px',
       '42.5px': '42.5px',
       '53.5px': '53.5px',
@@ -42,6 +44,7 @@ module.exports = {
       '63.5px': '63.5px',
       '85.5px': '85.5px',
       '101px': '85.5px',
+      card: 'calc((100% - 48px) / 3)',
       container: 'calc(100% - 32px)',
     },
     maxWidth: {
@@ -80,5 +83,9 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant }) {
+      addVariant('third', '&:nth-child(3n)');
+    }),
+  ],
 };
