@@ -75,7 +75,7 @@ const PortfolioPage: NextPage = () => {
       <main>
         <SectionBlock>
           <Container>
-            <BlockWithTitle title="portfolio">
+            <BlockWithTitle title="Portfolio">
               <TextWithCaptionCardList cardList={portfolioMock} />
             </BlockWithTitle>
           </Container>
