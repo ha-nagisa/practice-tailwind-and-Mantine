@@ -1,6 +1,7 @@
 import IconDarkMode from '@/assets/icon/icon_darkMode.svg';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { PAGE_URL } from 'src/constants/page-url';
 import HumbuggerMenu from './humbugger';
 
 export const Header = () => {
@@ -21,22 +22,22 @@ export const Header = () => {
         <div className="flex items-center">
           <ul className="hidden md:flex md:items-center">
             <li className="mr-16px">
-              <Link href="/about">
+              <Link href={PAGE_URL.ABOUT}>
                 <a className="text-lg font-bold text-primary-dark leading-6">About</a>
               </Link>
             </li>
             <li className="mr-16px">
-              <Link href="/blog">
+              <Link href={PAGE_URL.BLOG}>
                 <a className="text-lg font-bold text-primary-dark leading-6">Blog</a>
               </Link>
             </li>
             <li className="mr-16px">
-              <Link href="/portfolio">
+              <Link href={PAGE_URL.PORTFOLIO}>
                 <a className="text-lg font-bold text-primary-dark leading-6">Portfolio</a>
               </Link>
             </li>
             <li>
-              <Link href="/contact">
+              <Link href={PAGE_URL.CONTACT}>
                 <a className="text-lg font-bold text-primary-dark leading-6">Contact</a>
               </Link>
             </li>
@@ -58,10 +59,18 @@ export const Header = () => {
           />
         </div>
         <ul className="ml-24px mt-42.5px">
-          <li className="text-primary-white text-2xl leading-9 font-bold mb-16px">About</li>
-          <li className="text-primary-white text-2xl leading-9 font-bold mb-16px">Blog</li>
-          <li className="text-primary-white text-2xl leading-9 font-bold mb-16px">Portfolio</li>
-          <li className="text-primary-white text-2xl leading-9 font-bold ">Contact</li>
+          <li className="text-primary-white text-2xl leading-9 font-bold mb-16px">
+            <Link href={PAGE_URL.ABOUT}>About</Link>
+          </li>
+          <li className="text-primary-white text-2xl leading-9 font-bold mb-16px">
+            <Link href={PAGE_URL.BLOG}>Blog</Link>
+          </li>
+          <li className="text-primary-white text-2xl leading-9 font-bold mb-16px">
+            <Link href={PAGE_URL.PORTFOLIO}>Portfolio</Link>
+          </li>
+          <li className="text-primary-white text-2xl leading-9 font-bold ">
+            <Link href={PAGE_URL.CONTACT}>Contact</Link>
+          </li>
         </ul>
       </div>
     </>

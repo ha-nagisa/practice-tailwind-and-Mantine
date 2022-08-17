@@ -2,7 +2,7 @@ import IconFacebook from '@/assets/icon/icon_facebook.svg';
 import IconRss from '@/assets/icon/icon_rss.svg';
 import IconTwitter from '@/assets/icon/icon_twitter.svg';
 import React, { FC } from 'react';
-import { Container } from '../container';
+import { Container } from '../../../partials/container';
 
 export const MainContent: FC = () => {
   return (
