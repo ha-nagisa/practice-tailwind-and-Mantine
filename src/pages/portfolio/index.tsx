@@ -72,15 +72,13 @@ const portfolioMock = [
 const PortfolioPage: NextPage = () => {
   return (
     <DefaultLayout>
-      <main>
-        <SectionBlock>
-          <Container>
-            <BlockWithTitle title="Portfolio">
-              <TextWithCaptionCardList cardList={portfolioMock} />
-            </BlockWithTitle>
-          </Container>
-        </SectionBlock>
-      </main>
+      <SectionBlock>
+        <Container>
+          <BlockWithTitle title="Portfolio">
+            <TextWithCaptionCardList cardList={portfolioMock} />
+          </BlockWithTitle>
+        </Container>
+      </SectionBlock>
     </DefaultLayout>
   );
 };

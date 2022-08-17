@@ -115,36 +115,34 @@ const TopPage: NextPage = () => {
   return (
     <DefaultLayout>
       <MainContent />
-      <main>
-        <TopSection>
-          <Container>
-            <BlockWithTitle title="Blog">
-              <TextCardList textList={blogMock} />
-              <div className="mt-24px text-center">
-                <Link href={PAGE_URL.BLOG}>
-                  <a className="inline-block py-10px px-22px bg-primary-dark text-primary-white text-base rounded-32px">
-                    View All
-                  </a>
-                </Link>
-              </div>
-            </BlockWithTitle>
-          </Container>
-        </TopSection>
-        <TopSection>
-          <Container>
-            <BlockWithTitle title="portfolio">
-              <TextWithCaptionCardList cardList={portfolioMock} />
-              <div className="mt-40px text-center">
-                <Link href={PAGE_URL.PORTFOLIO}>
-                  <a className="inline-block py-10px px-22px bg-primary-dark text-primary-white text-base rounded-32px">
-                    View All
-                  </a>
-                </Link>
-              </div>
-            </BlockWithTitle>
-          </Container>
-        </TopSection>
-      </main>
+      <TopSection>
+        <Container>
+          <BlockWithTitle title="Blog">
+            <TextCardList textList={blogMock} />
+            <div className="mt-24px text-center">
+              <Link href={PAGE_URL.BLOG}>
+                <a className="inline-block py-10px px-22px bg-primary-dark text-primary-white text-base rounded-32px">
+                  View All
+                </a>
+              </Link>
+            </div>
+          </BlockWithTitle>
+        </Container>
+      </TopSection>
+      <TopSection>
+        <Container>
+          <BlockWithTitle title="portfolio">
+            <TextWithCaptionCardList cardList={portfolioMock} />
+            <div className="mt-40px text-center">
+              <Link href={PAGE_URL.PORTFOLIO}>
+                <a className="inline-block py-10px px-22px bg-primary-dark text-primary-white text-base rounded-32px">
+                  View All
+                </a>
+              </Link>
+            </div>
+          </BlockWithTitle>
+        </Container>
+      </TopSection>
     </DefaultLayout>
   );
 };

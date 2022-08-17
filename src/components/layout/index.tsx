@@ -12,7 +12,7 @@ const DefaultLayout: FC<Props> = ({ children }) => {
       <Container>
         <Header />
       </Container>
-      {children}
+      <main>{children}</main>
     </>
   );
 };

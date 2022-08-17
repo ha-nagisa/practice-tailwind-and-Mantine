@@ -47,15 +47,13 @@ const blogMock = [
 const BlogPage: NextPage = () => {
   return (
     <DefaultLayout>
-      <main>
-        <SectionBlock>
-          <Container>
-            <BlockWithTitle title="Blog">
-              <TextCardList textList={blogMock} />
-            </BlockWithTitle>
-          </Container>
-        </SectionBlock>
-      </main>
+      <SectionBlock>
+        <Container>
+          <BlockWithTitle title="Blog">
+            <TextCardList textList={blogMock} />
+          </BlockWithTitle>
+        </Container>
+      </SectionBlock>
     </DefaultLayout>
   );
 };
